@@ -1,0 +1,6 @@
+
+CREATE TABLE task(
+	id SERIAL PRIMARY KEY,
+	task TEXT,
+	status BOOLEAN
+	)
