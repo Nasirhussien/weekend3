@@ -28,7 +28,6 @@ $('#to-do').empty();
 tasks.forEach(function(task){
     var $li = $('<li></li>');
     var $form = $('<form></form>');
-        //needs to have name of column on DB not name on the DOM
 $form.append('<input type="text" class="taskInput" value="' + task.task + '"/>');
         // $('#to-do').append('<ul>' + task.task + '</ul>');
     // var $updatebutton= $('<button id="updateButton">Update</button>');
@@ -115,7 +114,7 @@ function completeTask(event){
       url: '/tasks/' + $button.data('id'),
       type: 'PUT',
       data: data,
-      // success: getTasks
+    //   success: getTasks
     });
   
   }
